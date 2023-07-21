@@ -1,0 +1,211 @@
+.skills {
+    background-color: rgba(31, 26, 19, 0.767);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    width: 100vw;
+}
+
+.skill__skills {
+    font-size: 4rem;
+    text-shadow: .5px .5px rgb(255, 250, 250);
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills__titulo {
+    flex-basis: 90vw;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    text-shadow: 1px 1px black;
+}
+
+.skills__lista {
+    border: 2px solid;
+    position: relative;
+    margin: 0 auto;
+    list-style: none;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: transparent;
+    list-style: none;
+}
+
+.skills__item{
+    border: transparent;
+}
+
+.skill--1{
+    position: absolute;
+    background: var(--cor-8);                                   
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.skill--1 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+}
+
+.skill--2{
+    position: absolute;
+    background:var(--cor-9);
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+}
+
+.skill--2 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-71deg);
+}
+
+.skill--3{
+    position: absolute;
+    background: var(--cor-8);
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(120deg);
+}
+
+.skill--3 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-120deg);
+}
+
+.skill--4{
+    position: absolute;
+    background: var(--cor-9);
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-180deg);
+}
+
+.skill--4 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-190deg);
+}
+
+.skill--5{
+    position: absolute;
+    background: var(--cor-8);
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-120deg);
+    
+}
+
+.skill--5 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(72.2deg);
+}
+
+
+.skill--6{
+    position: absolute;
+    background: var(--cor-9);
+    clip-path:polygon(0 20%, 50% 50%, 0 78%);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    
+}
+
+.skill--6 img{
+    position: absolute;
+    left: 5%;
+    top: 42%;
+    width: 100px;
+    height: 100px;
+    transform: rotate(72.2deg);
+}
+
+.skills__item:hover{
+    scale: 1.005;
+    background: var(--cor-1);
+    transition-duration: 1s;
+}
+
+.skills__center{
+    align-items: center;
+    background-color: var(--cor-1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    left: 30%;
+    position: absolute;
+    top: 30%;
+    height: 200px;
+    width: 200px;
+}
+
+.skills__soft{
+    background-color: var(--cor-1);
+    width: 30vw;
+    border-radius: 20px;
+    box-sizing:content-box;
+    text-align: left;
+    opacity: .9;
+}
+
+.skills__solft__lista{
+    list-style:none;
+    margin-left: 2vw;
+}
+
+.skills__soft__item{
+    font-size: 1.4rem;
+    margin-bottom: 2vh;
+}
+
+.skills__solft__lista :first-child{
+    font-size: 3rem;
+    border-bottom: 1p solid black;
+}
+
+.skills__soft--titulo{
+    border-bottom: 2px dotted black;
+    background-color: var(--cor-1);
+    border-radius: 20px 20px 0 0;
+}
+.skills__side{
+    align-self: flex-end;
+}

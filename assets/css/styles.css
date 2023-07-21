@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --cor-1: #0c0c0c;
+    --cor-2: #27231c;
+    --cor-3: #291f12;
+    --cor-4: #42331f;
+    --cor-5: #867762;
+
+    /* cores com opacity*/
+    --cor-6: #f3e9e92c;
+    --cor-7: #f5f3f12a;
+    --cor-8: #fcf6ee31;
+    --cor-9: #dfdddb1c;
+    --cor-10: #f7f5f32a;
+}
+
+body {
+    background-color: var(--cor-1);
+    color: var(--cor-5);
+    font-family: 'Ysabeau Infant', sans-serif;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.txt__side {
+    font-family: 'Satisfy', cursive;
+    color: rgba(253, 251, 251, 0.205);
+    text-shadow: .1px .1px rgba(0, 0, 0, 0.411);
+    transform: rotate(-30deg);
+    font-size: 1.5rem;
+    margin-right: 3vw;
+}

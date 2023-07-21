@@ -1,0 +1,34 @@
+.home {
+    display: flex;
+    align-items: end;
+    width: 100vw;
+    padding-bottom: 20vh;
+    padding-top: 10vh;
+    justify-content: space-between;
+    background: url(../imagens/john-schnobrich-yFbyvpEGHFQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home__home {
+    font-size: 4rem;
+    text-shadow: .5px .5px black;
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.home__front {
+    font-size: 2rem;
+    text-shadow: .5px .5px black;
+}
+
+.home__list {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    gap: 1vw;
+}
