@@ -1,27 +1,32 @@
 .quemSou{
     display: flex;
     width: 100vw;
-    align-items: end;
-    margin: 0 auto;
-    padding-top: 5vh;
+    height: 80vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
 }
+
 .quemSou__quemSou{
-    font-size: 4rem;
     text-shadow: .5px .5px black;
     display: flex;
     width: 80vw;
     margin: 0 auto;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 4vh;
 }
+
 .quemSou__titulo{
     font-size: 3rem;
-    margin-top: 5vh;
-    margin-bottom: 7vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     text-shadow: .5px .5px black;
 }
 
 .quemSou__texto{
     font-size: 1.5rem;
+}
+
+.quemSou__side {
+    align-self: flex-end;
+    margin-right: 10vw;
 }
