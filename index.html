@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/css/quemSou.css">
   <link rel="stylesheet" href="./assets/css/skills.css">
   <link rel="stylesheet" href="./assets/css/projetos.css">
+  <link rel="stylesheet" href="./assets/css/contato.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,7 @@ wght@0,1;0,300;0,400;0,500;1,1;1,100;1,200;1,300;1,400&display=swap" rel="styles
         <li class="cabecalho__menu__item"><a href="#skills">Skills</a></li>
         <li class="cabecalho__menu__item"><a href="#projetos">Projetos</a></li>
         <li class="cabecalho__menu__item"><a href="#">Antes</a></li>
-        <li class="cabecalho__menu__item"><a href="#">Contato</a></li>
+        <li class="cabecalho__menu__item"><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -55,7 +56,7 @@ wght@0,1;0,300;0,400;0,500;1,1;1,100;1,200;1,300;1,400&display=swap" rel="styles
   </section>
   <section class="quemSou" id="quemSou">
     <article class="quemSou__quemSou">
-      <h2 class="quemSou__titulo">Quem Sou...</h2>
+      <h2 class="quemSou__titulo">| Quem Sou...</h2>
       <p class="quemSou__texto">Carioca de 29 anos apaixonado por tenologia</p>
       <p class="quemSou__texto">Atualmente cursando Análise e Desenvolvimento de Sistemas</p>
       <p>...</p>
@@ -200,8 +201,29 @@ wght@0,1;0,300;0,400;0,500;1,1;1,100;1,200;1,300;1,400&display=swap" rel="styles
 
     <aside class="pojetos__side txt__side">Crie</aside>
   </section>
-
-
+  <section class="contato" id="contato">
+    <h2 class="contato__titulo">Entre em contato</h2>
+    <form class="contato__form">
+      <label for="nome" class="contato__form__label">Nome</label>
+      <input type="text" class="contato__form__nome" name="nome" placeholder="Meu nome" minlength="3" required>
+      <label for="email" class="contato__form__label">E-mail</label>
+      <input type="email" class="contato__form__email" placeholder="meuemail@email.com" name="email" minlength="12"
+        required>
+      <label for="message" class="contato__form__label">Mensagem</label>
+      <textarea type="text" name="message" class="contato__form__mensagem" placeholder="Escreva aqui." minlength="5"
+        maxlength="500"></textarea>
+      <button type="submit" class="contato__form__botao">Enviar</button>
+    </form>
+    <div class="contato__descricao">
+      <h3 class="contato__descricao__titulo">Contratos ou duvidas</h3>
+      <p class="contato__descricao__texto"><img src="./assets/imagens/envelope-exclamation-fill.svg" width="20px"
+          height="20px" alt="">allyssoncidade@gmail.com</p>
+      <p class="contato__descricao__texto"><img src="./assets/imagens/telephone.svg" width="20px" height="20px">(71)
+        99724-8724</p>
+      <p class="contato__descricao__texto">Allysson Cidade</p>
+    </div>
+    <aside class="contato__side txt__side">viva</aside>
+  </section>
 
   <script type="module" src="./assets/js/main.js"></script>
 </body>
