@@ -26,7 +26,6 @@
 }
 
 .projetos__card{
-    border: 1px solid;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
@@ -73,7 +72,7 @@
     height: 350px;
 }
 .projetos__card a:hover > .projetos__img{
-    height: 200px;
+    height: 230px;
     transition: .7s;
 }
 .projetos__card a:hover > .projetos__resumo{
