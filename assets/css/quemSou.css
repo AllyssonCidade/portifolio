@@ -30,3 +30,23 @@
     align-self: flex-end;
     margin-right: 10vw;
 }
+
+@media screen and (max-width:768px) {
+    .quemSou__titulo{
+        font-size: 3rem;
+    }
+
+    .quemSou__texto{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .quemSou__titulo{
+        font-size: 2rem;
+    }
+    .quemSou__texto{
+        font-size: 1rem;
+    }
+}
