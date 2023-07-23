@@ -14,3 +14,15 @@
     list-style: none;
 }
 
+.cabecalho__menu__item:hover{
+    text-shadow: 0 0 35px white;
+}
+
+
+@media screen and (max-width:320px) {
+    .cabecalho{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+}
