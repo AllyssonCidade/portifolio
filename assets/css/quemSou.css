@@ -1,6 +1,8 @@
 .quemSou{
     display: flex;
-    width: 100vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90vw;
     height: 80vh;
     padding-top: 10vh;
     padding-bottom: 5vh;
@@ -9,26 +11,59 @@
 .quemSou__quemSou{
     text-shadow: .5px .5px black;
     display: flex;
-    width: 80vw;
-    margin: 0 auto;
+    width: 50vw;
     flex-direction: column;
-    gap: 4vh;
+    gap: 2vh;
 }
 
 .quemSou__titulo{
-    font-size: 3rem;
+    position: relative;
+    font-size: 2.4rem;
     margin-top: 10vh;
-    margin-bottom: 10vh;
-    text-shadow: .5px .5px black;
+    margin-bottom: 7vh;
+    text-shadow: 0 0 80px;
+}
+
+.quemSou__titulo:after{
+    position: absolute;
+    content: " ";
+    width: 57.3vw;
+    height: 5px;
+    top: 1.2rem;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: var(--cor-5);
 }
 
 .quemSou__texto{
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .quemSou__side {
-    align-self: flex-end;
-    margin-right: 10vw;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../imagens/20230510_090637.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+    margin-right: 100px;
+    border: 5px solid;
+    box-shadow: 0 0 30px;
+}
+
+.quemSou__side::before{
+    content: "";
+    position: absolute;
+    height: 74px;
+    left: 50%;
+    border-radius: 10px;
+    top: -74px;
+    width: 5px;
+    background-color: var(--cor-5);
 }
 
 @media screen and (max-width:768px) {
