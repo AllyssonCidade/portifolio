@@ -42,5 +42,13 @@ body {
     .txt__side {
         display: none;
     }
-
+    body{
+        overflow-x:hidden;
+    }
 }
+@media screen and (max-width: 320px) {
+    body{
+        overflow-x:hidden;
+    }
+}
+
