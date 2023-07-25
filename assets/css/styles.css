@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 :root {
-    --cor-1: #0c0c0c;
+    --cor-1: #313131;
     --cor-2: #27231c;
     --cor-3: #291f12;
     --cor-4: #42331f;
-    --cor-5: #867762;
+    --cor-5: #6ca1e6;
 
     /* cores com opacity*/
     --cor-6: #f3e9e92c;
@@ -25,6 +26,7 @@ body {
     font-family: 'Ysabeau Infant', sans-serif;
     overflow-x: hidden;
     margin: 0 auto;
+    border-left: 8px solid var(--cor-5);
 }
 
 .txt__side {
@@ -37,8 +39,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .txt__side{
+    .txt__side {
         display: none;
     }
-    
+
 }
