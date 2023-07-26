@@ -1,4 +1,4 @@
-.quemSou{
+.quemSou {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -8,7 +8,7 @@
     padding-bottom: 5vh;
 }
 
-.quemSou__quemSou{
+.quemSou__quemSou {
     text-shadow: .5px .5px black;
     display: flex;
     width: 50vw;
@@ -16,7 +16,7 @@
     gap: 2vh;
 }
 
-.quemSou__titulo{
+.quemSou__titulo {
     position: relative;
     font-size: 2.4rem;
     margin-top: 10vh;
@@ -24,7 +24,7 @@
     text-shadow: 0 0 80px;
 }
 
-.quemSou__titulo:after{
+.quemSou__titulo:after {
     position: absolute;
     content: " ";
     width: 57.3vw;
@@ -35,7 +35,7 @@
     background-color: var(--cor-5);
 }
 
-.quemSou__texto{
+.quemSou__texto {
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -53,9 +53,10 @@
     margin-right: 100px;
     border: 5px solid;
     box-shadow: 0 0 30px;
+    overflow: hidden;
 }
 
-.quemSou__side::before{
+.quemSou__side::before {
     content: "";
     position: absolute;
     height: 74px;
@@ -67,21 +68,78 @@
 }
 
 @media screen and (max-width:768px) {
-    .quemSou__titulo{
-        font-size: 3rem;
+    .quemSou {
+        width: 100vw;
+        padding-top: 0;
     }
 
-    .quemSou__texto{
-        font-size: 1rem;
+    .quemSou__quemSou {
+        margin-left: 10px;
+        display: flex;
+        width: 60vw;
+        flex-direction: column;
+        gap: 2vh;
     }
-    
+
+    .quemSou__titulo {
+        position: relative;
+        font-size: 2rem;
+        margin-top: 10vh;
+        margin-bottom: 7vh;
+        text-shadow: 0 0 90px;
+    }
+
+    .quemSou__titulo:after {
+        width: 54.8vw;
+    }
+
+    .quemSou__side {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin-right: 4vw;
+        overflow: visible;
+    }
+
+    .quemSou__side::before {
+        content: "";
+        position: absolute;
+        height: 78.7px;
+        top: -78.7px;
+        width: 5px;
+    }
+
 }
 
 @media screen and (max-width:320px) {
-    .quemSou__titulo{
-        font-size: 2rem;
+    .quemSou{
+        margin-bottom: 10vh;
     }
-    .quemSou__texto{
-        font-size: 1rem;
+    
+    .quemSou__titulo {
+        font-size: 1.4rem;
+    }
+
+    .quemSou__titulo:after {
+        width: 37.5vw;
+    }
+
+    .quemSou__texto {
+        font-size: .7rem;
+    }
+
+    .quemSou__side {
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        border: 1px solid;
+        overflow: visible;
+    }
+
+    .quemSou__side::before {
+        height: 75px;
+        left: 65px;
+        top: -75px;
+
     }
 }
