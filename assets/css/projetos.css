@@ -4,6 +4,7 @@
         width: 90vw;
         margin: 0 auto;
         padding-top: 30vh;
+        overflow: hidden;
     }
 
     .projetos__titulo {
@@ -14,7 +15,7 @@
         text-shadow: 0 0 30px;
     }
 
-    .projetos__titulo::before{
+    .projetos__titulo::before {
         position: absolute;
         content: "";
         left: -80px;
@@ -62,6 +63,7 @@
         height: 250px;
         width: 300px;
         border-radius: 10px;
+        box-shadow: 0 0 6px;
     }
 
 
@@ -75,19 +77,16 @@
         border-radius: 20px;
     }
 
-    .pojetos__side {
-        margin-top: 20px;
-        align-self: end;
-    }
 
     .projetos__card:hover {
         height: 350px;
     }
 
-    .projetos__card a{
+    .projetos__card a {
         opacity: .5;
 
     }
+
     .projetos__card a:hover {
         height: 350px;
         opacity: 1;
@@ -106,7 +105,8 @@
 
     @media screen and (max-width:768px) {
         .projetos__titulo {
-            font-size: 3rem;
+            font-size: 2rem;
+            margin-bottom: 5vh;
         }
 
         .projetos {
@@ -130,7 +130,7 @@
 
     @media screen and (max-width:320px) {
         .projetos__titulo {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .projetos__img {
@@ -139,12 +139,52 @@
             border-radius: 10px;
         }
 
+        .projetos__titulo{
+            padding-bottom: 10vh;
+        }
+
         .projetos__card__titulo {
             font-size: 1rem;
-            padding: 2vh;
+            padding: 1vh;
+            
         }
 
         .projetos__projetos {
             gap: 1vh;
         }
+
+
+        .projetos__card {
+            margin: 5px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.103);
+            z-index: 10;
+            margin-bottom: 15px;
+        }
+
+        .projetos__resumo{
+            font-size: .8rem;
+        }
+        .projetos__card {
+            margin: 5px;
+            height: 290px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.103);
+            z-index: 10;
+            margin-bottom: 15px;
+        }
+    
+        .projetos__img {
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 6px;
+        }
+    
+
     }
