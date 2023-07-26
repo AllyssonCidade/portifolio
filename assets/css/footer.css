@@ -1,12 +1,14 @@
 .footer {
-    width: 80vw;
+    background-color: #414141;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     align-items: center;
     gap: 5vh;
+    overflow: hidden;
 }
 
 .footer__lista {
@@ -22,7 +24,7 @@
 
 @media screen and (max-width: 768px) {
     .footer {
-        width: 90vw;
+        width: 100vw;
         font-size: 1rem;
     }
 
@@ -31,7 +33,27 @@
         justify-content: space-around;
     }
 
-    .footer__creditos{
+    .footer__creditos {
         font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        width: 100vw;
+        font-size: .8rem;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.459);
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        gap: 3vh;
+    }
+
+    .footer__lista {
+        width: 90vw;
+        justify-content: space-around;
+    }
+
+    .footer__creditos {
+        font-size: .7rem;
     }
 }
