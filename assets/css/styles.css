@@ -24,9 +24,9 @@ body {
     background-color: var(--cor-1);
     color: var(--cor-5);
     font-family: 'Ysabeau Infant', sans-serif;
-    overflow-x: hidden;
     margin: 0 auto;
     border-left: 8px solid var(--cor-5);
+    overflow-x: hidden;
 }
 
 .txt__side {
@@ -42,13 +42,5 @@ body {
     .txt__side {
         display: none;
     }
-    body{
-        overflow-x:hidden;
-    }
-}
-@media screen and (max-width: 320px) {
-    body{
-        overflow-x:hidden;
-    }
-}
 
+}
