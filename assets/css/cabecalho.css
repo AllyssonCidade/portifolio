@@ -6,6 +6,7 @@
     padding-bottom: 5vh;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.459);
     overflow: hidden;
+    font-size: .9rem;
 }
 .cabecalho__menu a{
     text-decoration: none;
@@ -24,6 +25,12 @@
     text-shadow: 0 0 35px rgb(123, 119, 119);
 }
 
+@media screen and (max-width:768px) {
+    .cabecalho__menu__lista{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width:320px) {
     .cabecalho{
