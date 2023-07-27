@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 90vw;
-    height: 80vh;
+    width: 100vw;
     padding-top: 10vh;
     padding-bottom: 5vh;
+    overflow: hidden;
 }
 
 .quemSou__quemSou {
@@ -14,6 +14,7 @@
     width: 50vw;
     flex-direction: column;
     gap: 2vh;
+    margin-left: 5vw;
 }
 
 .quemSou__titulo {
@@ -27,7 +28,7 @@
 .quemSou__titulo:after {
     position: absolute;
     content: " ";
-    width: 57.3vw;
+    width: 100vw;
     height: 5px;
     top: 1.2rem;
     margin-left: 10px;
@@ -45,101 +46,58 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    margin-right: 5vw;
     background-image: url(../imagens/20230510_090637.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 150px;
-    margin-right: 100px;
+    margin-top: 25vh;
     border: 5px solid;
     box-shadow: 0 0 30px;
-    overflow: hidden;
+    opacity: .7;
 }
 
 .quemSou__side::before {
     content: "";
     position: absolute;
-    height: 74px;
+    height: 30vh;
     left: 50%;
     border-radius: 10px;
-    top: -74px;
+    top: -30vh;
     width: 5px;
     background-color: var(--cor-5);
 }
 
 @media screen and (max-width:768px) {
-    .quemSou {
-        width: 100vw;
-        padding-top: 0;
-    }
-
-    .quemSou__quemSou {
-        margin-left: 10px;
-        display: flex;
-        width: 60vw;
-        flex-direction: column;
-        gap: 2vh;
-    }
-
-    .quemSou__titulo {
-        position: relative;
-        font-size: 2rem;
-        margin-top: 10vh;
-        margin-bottom: 7vh;
-        text-shadow: 0 0 90px;
-    }
-
-    .quemSou__titulo:after {
-        width: 54.8vw;
-    }
-
     .quemSou__side {
-        position: relative;
-        width: 300px;
-        height: 300px;
-        margin-right: 4vw;
-        overflow: visible;
-    }
-
-    .quemSou__side::before {
-        content: "";
-        position: absolute;
-        height: 78.7px;
-        top: -78.7px;
-        width: 5px;
-    }
-
-}
-
-@media screen and (max-width:320px) {
-    .quemSou{
-        margin-bottom: 10vh;
-    }
-    
-    .quemSou__titulo {
-        font-size: 1.4rem;
-    }
-
-    .quemSou__titulo:after {
-        width: 37.5vw;
+        margin-right: 1vw;
+        width: 250px;
+        height: 250px;
     }
 
     .quemSou__texto {
-        font-size: .7rem;
+        line-height: 1.2;
     }
+}
+    @media screen and (max-width:450px) {
+        .quemSou__side {
+            margin-right: 1vw;
+            width: 150px;
+            height: 250px;
+            border-radius: 20px;
+        }
+        .quemSou__quemSou {
+            margin-left: 2vw;
+            gap: 1vh;
+        }
+        .quemSou__texto {
+            line-height: 1;
+        }
+        .quemSou__titulo{
+            width: 100vw;
+        }
+        .quemSou__titulo:after{
+            margin-left: 0;
+        }
 
-    .quemSou__side {
-        width: 150px;
-        height: 150px;
-        margin-right: 10px;
-        border: 1px solid;
-        overflow: visible;
-    }
-
-    .quemSou__side::before {
-        height: 75px;
-        left: 65px;
-        top: -75px;
-
-    }
 }
